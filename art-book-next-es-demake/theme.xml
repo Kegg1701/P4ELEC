@@ -1,6 +1,6 @@
 <!--
 theme name:    Art Book Next
-author:        Anthony Caccese -- Modded by KEgg
+author:        Anthony Caccese ~ Modded by KEgg
 license:       creative commons CC-BY-NC-SA
 -->
 <theme>
@@ -22,7 +22,7 @@ license:       creative commons CC-BY-NC-SA
    </variables>
 
 
-   <!-- ------ UI Theme Configuration items ------ -->
+   <!-- UI Theme Configuration items -->
 
 
 
@@ -214,12 +214,12 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
 
 
 
-   <!-- ------ Common Shared Components ------ -->
+   <!-- Common Shared Components -->
 
 
    <view name="screen,system">
@@ -231,7 +231,7 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- ------ Time - Battery - Wifi BAR ------ -->
+   <!-- Time - Battery - Wifi BAR -->
 
 
    <view name="screen">
@@ -326,12 +326,12 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
 
 
 
-   <!-- ------ Main System/Carousel Menu ------ -->
+   <!-- Main System/Carousel Menu -->
 
    <view name="system">
       <image name="background" extra="true">
@@ -422,10 +422,10 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-      <!-- ------------- multi-artwork ------------- -->
+      <!-- multi-artwork -->
 
 
-         <!-- ----- BG ARTWORK ----- -->
+         <!--   BG ARTWORK   -->
 
       <image ifSubset="system-view-style:multi" name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
@@ -440,7 +440,7 @@ license:       creative commons CC-BY-NC-SA
          <saturation>${systemArtSaturation}</saturation>
       </image> 
 
-         <!-- ----- LOGO ----- -->
+         <!--   LOGO   -->
 
       <image ifSubset="system-view-style:multi" name="system-art" extra="true">
          <visible ifSubset="system-logos:font">false</visible>
@@ -496,7 +496,7 @@ license:       creative commons CC-BY-NC-SA
 
          <!-- Center rocking -->
          <!-- <storyboard  ifSubset="multi-logo-trans:logo-rk">
-            <animation property="rotation" from="5" to="-5" begin="0" duration="700" mode="EaseInOut" autoReverse="true" repeat="forever"/>
+            <animation property="rotation" from="5" to="-5" begin="0" duration="700" mode="EaseInOut" autoReverse="true" repeat="forever"/> -->
             <!-- <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
          </storyboard> -->
 
@@ -541,7 +541,7 @@ license:       creative commons CC-BY-NC-SA
          <zIndex>2</zIndex>
       </image>
 
-      <!-- ------- MULITART LOGO TEXT ALT  ------- -->
+      <!--MULITART LOGO TEXT ALT -->
 
       <text ifSubset="system-view-style:multi|centered-one-logo|no-artwork-one-logo, system-logos:font" name="font_logoText" extra="true">
          <origin>0</origin>
@@ -601,7 +601,7 @@ license:       creative commons CC-BY-NC-SA
          <zIndex>50</zIndex>
       </text>
 
-      <!-- ------- GAME COUNT ------- -->
+      <!--GAME COUNT-->
 
       <text name="systemInfo">
          <pos>0.0 0.675</pos>
@@ -664,10 +664,9 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
-
-   <!-- ------ Gamelist ------ -->
+   <!-- Gamelist -->
 
 
 
@@ -793,8 +792,7 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
-
+   <!-- -->
 
    <view name="basic">
       <text name="logoText">
@@ -848,10 +846,9 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
-
-   <!-- ------ Metadata for Games ------ -->
+   <!-- Metadata for Games -->
 
 
    <view name="detailed,gamecarousel,grid">
@@ -925,7 +922,7 @@ license:       creative commons CC-BY-NC-SA
 
    </view>
 
-<!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- -->
 
 <!--    <view ifSubset="distribution:batocera|retrobat" name="grid">
       <image name="background" extra="true">
@@ -1241,7 +1238,7 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
 
-<!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- -->
 
 
    <view name="gamecarousel">
@@ -1383,15 +1380,15 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
 
-<!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- -->
 
 
-   <!-- ------ metadata on ------ -->
+   <!-- metadata on -->
 
-   <!-- ------ metadata stats ------ -->
+   <!-- metadata stats -->
    <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,gamecarousel,grid">
 
-      <!-- ------- STORYBOARD RATING/LAST PLAYED DATE ------- -->
+      <!--STORYBOARD RATING/LAST PLAYED DATE-->
 
       <text ifSubset="distribution:batocera|retrobat" name="alt_gametime,alt_releasedate,alt_lastplayed,alt_publisher,md_name">
          <fontPath>${fontBold}</fontPath>
@@ -1483,7 +1480,7 @@ license:       creative commons CC-BY-NC-SA
          </storyboard>
       </text>
 
-      <!-- ------- STORYBOARD RELEASE DATE/PLAYED TIME ------- -->
+      <!--STORYBOARD RELEASE DATE/PLAYED TIME-->
 
       <image ifSubset="distribution:batocera|retrobat" name="md_gametime_icon,md_releasedate_icon">
          <origin>0 0.5</origin>
@@ -1539,10 +1536,10 @@ license:       creative commons CC-BY-NC-SA
          </storyboard>
       </text>
 
-      <!-- ----                                                                                            ---- -->
+      <!-- -->
 
 
-      <!-- --- --- metadata game description --- --- -->
+      <!-- metadata game description -->
 
       <text name="md_description">
          <pos>0.525 0.666</pos>
@@ -1588,10 +1585,9 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
-
-   <!-- ------ VIDEO and Game ARTWORK ------ -->
+   <!-- VIDEO and Game ARTWORK -->
 
    <view name="detailed,gamecarousel,grid">
 
@@ -1622,7 +1618,7 @@ license:       creative commons CC-BY-NC-SA
          <visible>empty({game:thumbnail}) || !exists({game:thumbnail})</visible>
       </image>
 
-<!-- ----                                                                                            ---- -->
+<!-- -->
 
 
       <!-- 4:3 ratio background plate for video and artwork -->
@@ -1645,7 +1641,7 @@ license:       creative commons CC-BY-NC-SA
       </image>
 
 
-      <!-- ----                                                                                            ---- -->
+      <!-- -->
 
       <!-- WARNING No -image png available -->
       <image ifSubset="distribution:batocera|retrobat" name="no-image" extra="true">
@@ -1702,9 +1698,9 @@ license:       creative commons CC-BY-NC-SA
          </storyboard>
       </image> -->
 
-      <!-- ----                                                                                            ---- -->
+      <!-- -->
 
-      <!-- ------ VIDEO ------ -->
+      <!-- VIDEO -->
 
       <!-- show -image -thumb -marquee png if no video -->
       <image ifSubset="distribution:batocera|retrobat" name="no-video" extra="true">
@@ -1820,11 +1816,11 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-      <!-- ----                     ------------------------------------------------                        ---- -->
+      <!-- -->
 
 
 
-      <!-- --- Status Icon Bar --- -->  
+      <!-- Status Icon Bar -->  
 
       <image name="top-video-mask,top-video-mask-grad" extra="true">
          <path>${spacerImage}</path>
@@ -1846,10 +1842,10 @@ license:       creative commons CC-BY-NC-SA
       </image>
 
 
-      <!-- ----                     ------------------------------------------------                        ---- -->
+       <!-- -->
 
 
-      <!-- --- Game Logo marquee --- -->
+      <!-- Game Logo marquee -->
 
       <image name="md_marquee,no_marquee" extra="true">
          <origin>0.5</origin>
@@ -1949,10 +1945,9 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- -->
 
-
-   <!-- ------ THE MENU SYSTEM ------ -->
+   <!-- THE MENU SYSTEM -->
 
 
    <view name="menu">
@@ -2022,8 +2017,7 @@ license:       creative commons CC-BY-NC-SA
 
 
 
-   <!-- -------------------------------------------------------------------------------------------------------- -->
-
+   <!-- -->
 
 
 
