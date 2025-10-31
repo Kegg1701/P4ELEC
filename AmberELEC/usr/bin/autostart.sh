@@ -8,6 +8,13 @@
 
 DEVICE=$(tr -d '\0' < /sys/firmware/devicetree/base/model)
 
+# Boot time optimization - disable unnecessary services
+systemctl mask systemd-hwdb-update.service
+systemctl disable wait-time-sync.service
+systemctl mask wait-time-sync.service
+systemctl disable joyled.service
+systemctl mask joyled.service
+
 # Set performance mode to start the boot
 performance
 
