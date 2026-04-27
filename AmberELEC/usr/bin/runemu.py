@@ -367,7 +367,9 @@ class EmuRunner():
                 command += ['--connect', self.args['connect'] +
                             '|' + self.args['port']]
             if 'host' in self.args:
-                command += ['--host', self.args['host']]
+                command.append('--host')
+                if 'port' in self.args:
+                    command += ['--port', self.args['port']]
 
             command += ['--nick', netplay_nick]
 
@@ -463,17 +465,21 @@ class EmuRunner():
 def main():
     time_started = perf_counter()
 
+    BOOLEAN_FLAGS = {'host'}
+
     i = 0
     args: dict[str, str] = {}
     while i < len(sys.argv) - 1:
         if sys.argv[i].startswith('--'):
-            args[sys.argv[i][2:]] = sys.argv[i + 1]
-            i += 1
-            continue
-        if sys.argv[i].startswith('-'):
+            key = sys.argv[i][2:]
+            if key in BOOLEAN_FLAGS:
+                args[key] = ''
+            else:
+                args[key] = sys.argv[i + 1]
+                i += 1
+        elif sys.argv[i].startswith('-'):
             args[sys.argv[i][1:]] = sys.argv[i + 1]
             i += 1
-            continue
         i += 1
 
     rom = Path(args['rom']) if 'rom' in args else None
